@@ -50,7 +50,7 @@ def cob(xmin, xmax, num_agents=50, num_vars=2, epsilon=1, max_iterations=40, Pro
     X defines the number of entries to be saved in memory. Research suggests that the best value for it is num_agents/10
     Pro is used for escaping local minima. Research suggests that the best value for it is 0.25.
     '''
-    # coordinates = xmin + np.random.uniform(size=(num_agents, num_vars)) * (xmax - xmin)
+    
     velocities = np.zeros(shape=(num_agents, num_vars))
     cb = np.zeros(shape=(num_agents, num_vars+1))   # +1 to accomodate mass
     cb[:, 1:] = xmin + np.random.uniform(size=(num_agents, num_vars)) * (xmax - xmin)
