@@ -13,7 +13,7 @@ iterate:
         replace bottom X entries with memory entries
     save top x entries in memory
     sort cb again
-    plot # optional
+    plot (optional)
     set initial velocities
     calculate new velocities
     calculate new positions
